@@ -161,9 +161,12 @@
 				TargetAttributes = {
 					0AE069541BBA7D110075B571 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UFP79C7E65;
+						LastSwiftMigration = 0830;
 					};
 					0AE069691BBA7D110075B571 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 						TestTargetID = 0AE069541BBA7D110075B571;
 					};
 				};
@@ -342,10 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFP79C7E65;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -353,10 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFP79C7E65;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -375,6 +382,7 @@
 				INFOPLIST_FILE = SwiftTableViewDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTableViewDemo.app/SwiftTableViewDemo";
 			};
 			name = Debug;
@@ -390,6 +398,7 @@
 				INFOPLIST_FILE = SwiftTableViewDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTableViewDemo.app/SwiftTableViewDemo";
 			};
 			name = Release;
@@ -413,6 +422,7 @@
 				0AE069761BBA7D110075B571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AE069771BBA7D110075B571 /* Build configuration list for PBXNativeTarget "SwiftTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +431,7 @@
 				0AE069791BBA7D110075B571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

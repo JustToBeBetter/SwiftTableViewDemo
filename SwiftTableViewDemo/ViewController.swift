@@ -15,7 +15,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let tableView = UITableView(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
         
         tableView.delegate = self;
         tableView.dataSource = self;
@@ -23,44 +23,44 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.view.addSubview(tableView)
         _dataArray = NSMutableArray()
         
-        for(var i = 0;  i < 100; i++){
-            
-            _dataArray!.addObject(i)
-            
+        for i in 0 ... 10
+        {
+        _dataArray!.add(i)
             
         }
     
         
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _dataArray!.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("cellid")as?UITableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cellid")
+        
         if (cell == nil){
-            cell = UITableViewCell(style:.Default, reuseIdentifier: "cellid")
-            i++
-           println("创建了个\(i)个cell")
+            cell = UITableViewCell(style:.default, reuseIdentifier: "cellid")
+            i += 1
+           print("创建了个\(i)个cell")
          
         }
         
-        cell!.textLabel!.text = "\(indexPath.row)"
+        cell?.textLabel!.text = "\(indexPath.row)"
         
         
         return cell!
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60;
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        println("您点击了\(indexPath.row)个cell")
+        print("您点击了\(indexPath.row)个cell")
     }
     
     
